@@ -29,8 +29,17 @@ from io import BytesIO
 import fake_useragent as fake_ua
 from pyvirtualdisplay import Display
 
+from pyvirtualdisplay import Display
+from selenium import webdriver
+
 display = Display(visible=0, size=(1920, 1080))  # Adjust size as needed
 display.start()
+
+# Now you can initialize the Chrome driver
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--disable-dev-shm-usage')
+driver = webdriver.Chrome(options=chrome_options)
 # parse User-Agent for matching distribution
 ua_parse_flag = True
 try:
