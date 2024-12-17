@@ -1,2 +1,2 @@
 # ISP Data Pollute
-Origina Repo: https://github.com/essandess/isp-data-pollution
+Original Repo: https://github.com/essandess/isp-data-pollution
